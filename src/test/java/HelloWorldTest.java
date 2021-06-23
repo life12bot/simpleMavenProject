@@ -24,4 +24,18 @@ class HelloWorldTest {
         Assertions.assertEquals(11, length);
 
     }
+
+    @Test
+    void setPhrase() {
+        //give
+        final String expected = "some text";
+        HelloWorld helloWorld = new HelloWorld();
+
+        //when
+        helloWorld.setPhrase(expected);
+        final String actual = helloWorld.getPhrase();
+
+        //then
+        Assertions.assertEquals(expected, actual);
+    }
 }
