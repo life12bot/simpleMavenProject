@@ -1,16 +1,17 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class HelloWorldTest {
 
     @Test
     void getPhrase() {
-        String phrase = new HelloWorld().getPhrase();
+        //give
+        final String expected = "Hello World";
 
-        Assertions.assertEquals("Phrase", phrase);
+        //when
+        final String actual = new HelloWorld().getPhrase();
 
+        //then
+        Assertions.assertEquals("Hello World", actual);
     }
 }
