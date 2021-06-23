@@ -14,4 +14,14 @@ class HelloWorldTest {
         //then
         Assertions.assertEquals("Hello World", actual);
     }
+
+    @Test
+    void getPhraseLength() {
+        //when
+        int length = new HelloWorld().getPhraseLength();
+
+        //then
+        Assertions.assertEquals(11, length);
+
+    }
 }
