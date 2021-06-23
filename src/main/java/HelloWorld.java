@@ -9,4 +9,8 @@ public class HelloWorld {
     public int getPhraseLength() {
         return phrase.length();
     }
+
+    public void setPhrase(String phrase) {
+        this.phrase = phrase;
+    }
 }
