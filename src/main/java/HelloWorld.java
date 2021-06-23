@@ -5,4 +5,8 @@ public class HelloWorld {
     public String getPhrase() {
         return phrase;
     }
+
+    public int getPhraseLength() {
+        return phrase.length();
+    }
 }
