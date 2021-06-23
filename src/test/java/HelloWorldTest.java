@@ -12,7 +12,7 @@ class HelloWorldTest {
         final String actual = new HelloWorld().getPhrase();
 
         //then
-        Assertions.assertEquals("Hello World", actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
